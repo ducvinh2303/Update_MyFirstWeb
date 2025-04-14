@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Chuyển hướng các yêu cầu đến các tệp PHP trong thư mục "views"
+RewriteRule ^$ views/home.php [L]
+RewriteRule ^home$ views/home.php [L]
+RewriteRule ^archive$ views/archive.php [L]
+RewriteRule ^login$ views/login.php [L]
+RewriteRule ^register$ views/register.php [L]
+RewriteRule ^create$ views/create.php [L]
+RewriteRule ^about$ views/about.php [L]
+RewriteRule ^search$ views/search.php [L]
+
+# Ngăn chặn truy cập trực tiếp vào các tệp PHP trong thư mục
+RewriteCond %{THE_REQUEST} /views/.*\.php [NC]
+RewriteRule ^ - [F]
+
+RewriteCond %{THE_REQUEST} /model/.*\.php [NC]
+RewriteRule ^ - [F]
+
+RewriteCond %{THE_REQUEST} /controller/.*\.php [NC]
+RewriteRule ^ - [F]
+
+RewriteCond %{THE_REQUEST} /config/.*\.php [NC]
+RewriteRule ^ - [F]

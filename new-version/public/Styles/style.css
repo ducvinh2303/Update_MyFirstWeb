@@ -1,0 +1,319 @@
+@import url(core.css);
+
+header #banner-image {
+    display: block;
+    width: 100%;
+    height: 192px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-home {
+    height: 469px !important;
+    object-position: bottom !important;
+}
+
+header .container {
+    position: relative;
+}
+
+header h1 {
+    position: absolute;
+    top: 0px;
+    padding-left: 32px;
+    padding-right: 16px;
+    color: aliceblue;
+    font-weight: bolder;
+    background-color: black;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 34px;
+    background-color: bisque;
+    padding: 12px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+header ul li {
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    color: gray;
+    text-decoration: none !important;
+}
+
+.menu .active a {
+    color: #663399 !important;
+    text-decoration-line: underline;
+}
+
+footer {
+    background-color: black;
+    padding: 8px;
+    text-align: center;
+    color: gray;
+}
+
+/* For home and archive pages */
+section {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.title h2 {
+    font-weight: bolder;
+}
+
+form #error {
+    color: red;
+    font-weight: bold;
+}
+
+.title p {
+    font-family: 'Times New Roman', serif;
+    font-size: 20px;
+    background-color: aliceblue;
+    padding: 16px;
+    font-style: italic;
+    color: #663399;
+    quotes: "“" "”" "‘" "’";
+    text-transform: capitalize;
+}
+
+.title p:before {
+    content: open-quote;
+    /* Add opening quotation mark at the beginning of the paragraph content */
+}
+
+.title p:after {
+    content: close-quote;
+    /* Add closing quotation mark at the end of the paragraph content */
+}
+
+.blog-title {
+    display: block;
+    border: #663399 1px solid;
+    margin-top: 32px;
+    border-bottom: unset;
+    padding: 8px;
+}
+
+.blog-title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.blog-content {
+    border: #663399 1px solid;
+    padding: 8px;
+}
+
+.archive-expand button {
+    border-style: none;
+    border-radius: 15px;
+    box-shadow: #d3d3d3 0px 1px 1px 1px;
+    display: inline-block;
+    padding: 1.6px 8px 1.6px 8px;
+    margin-right: 8px;
+    font-size: small;
+    font-style: italic;
+    cursor: pointer;
+    color: black;
+}
+
+.archive-expand button:hover {
+    color: gray;
+}
+
+.blog-creation,
+.blog-tag {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.blog-creation {
+    padding: 8px;
+    float: right;
+    text-align: end;
+}
+
+.blog-creation p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: 1.6px;
+    font-size: smaller;
+}
+
+.blog-tag p {
+    border-radius: 15px;
+    box-shadow: #d3d3d3 0px 1px 1px 1px;
+    display: inline-block;
+    padding: 1.6px 8px 1.6px 8px;
+    margin-right: 8px;
+    font-size: small;
+    font-style: italic;
+    cursor: pointer;
+}
+
+/* For login and registration pages */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+.wrapper form {
+    border: #ffffff 1px solid;
+    width: fit-content;
+    padding: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    box-shadow: #d3d3d3 0px 1px 1px 1px;
+}
+
+.wrapper h1 {
+    font-weight: bolder;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.wrapper .input-box,
+.wrapper .input-field {
+    margin-top: 16px;
+    margin-bottom: 1.6px;
+}
+
+.wrapper .input-box input {
+    width: 100%;
+    font-size: 16px;
+    padding: 6.4px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #C0C0C0;
+}
+
+.wrapper .remember-forgot {
+    margin-top: 16px;
+}
+
+.wrapper button {
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 2px solid #C0C0C0;
+    cursor: pointer;
+}
+
+.wrapper button:hover {
+    box-shadow: #d3d3d3 0px 1px 1px 1px;
+}
+
+.wrapper button:hover a {
+    color: black;
+}
+
+.wrapper button a {
+    text-decoration: none !important;
+}
+
+.wrapper input[type="checkbox"] {
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+/* For new blog form */
+.blog-new form {
+    margin: 0px 16px 16px 16px;
+}
+
+.blog-new h1 {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.blog-new .input-field,
+.blog-new .form-button {
+    margin-top: 16px;
+}
+
+.blog-new .form-button {
+    margin-bottom: 16px;
+}
+
+.blog-new .input-field {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.blog-new label {
+    display: inline;
+}
+
+.blog-new input,
+.blog-new textarea {
+    display: inline;
+    width: 80%;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: #C0C0C0 1px solid;
+}
+
+.blog-new button {
+    margin-top: 16px;
+    font-size: 16px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    border: 2px solid #C0C0C0;
+    cursor: pointer;
+}
+
+.blog-new button:hover {
+    box-shadow: #d3d3d3 0px 1px 1px 1px;
+}
+
+/* For new about section */
+.about {
+    margin: 0px 16px 16px 16px;
+}
+
+.about h1 {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+.about li {
+    font-size: 16px;
+}
+
+/* Search Form */
+.search-form form input{
+    font-size: 1rem;
+    display: inline;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: #C0C0C0 1px solid;
+    position: absolute;
+    bottom: 0.4rem;
+    right: 0.4rem;
+    padding-left: 32px;
+    padding-right: 16px;
+    font-weight: bolder;/
+}
