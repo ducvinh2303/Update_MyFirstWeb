@@ -1,7 +1,7 @@
 # Update_MyFirstWeb
-# Since this is one of my first projects in the journey to becoming a programmer, there are still many areas for improvement, and the application is not yet fully complete. I welcome feedback and will continue refining it as I develop my skills.
+Since this is one of my first projects in the journey to becoming a programmer, there are still many areas for improvement, and the application is not yet fully complete. I welcome feedback and will continue refining it as I develop my skills.
 
-🔁 Project: Update_MyFirstWeb – Full Stack Blog Web App (KIT202 Assignment 2)
+# 🔁 Project: Update_MyFirstWeb – Full Stack Blog Web App (KIT202 Assignment 2)
 This project is an updated and extended version of my original MyFirstWeb frontend blog application, developed for Assignment 2 of the KIT202 Web Programming Fundamentals unit at the University of Tasmania.
 
 The aim of this version was to transform the static frontend into a dynamic, database-driven blog using:
